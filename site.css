@@ -140,11 +140,19 @@ body {
 
 
 .div-official {
-    text-align: center;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center; 
+
 }
+
+.div-second-hand {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;
+}
+
 .official {
     text-align: center;
     padding-left: 50px;
@@ -160,6 +168,27 @@ body {
     transition: 0.25s;
 }
 .official:hover {
+    color:#47b11d;
+    background-color: black;
+    border-radius: 30px;
+}
+
+.second {
+    text-align: center;
+    padding-left: 26px;
+    padding-right: 26px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: black;
+    color: black;
+    background-color: #47b11d;
+    transition: 0.25s;
+}
+
+.second:hover {
     color:#47b11d;
     background-color: black;
     border-radius: 30px;
