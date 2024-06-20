@@ -1,31 +1,29 @@
 
-
 .header {
     display: flex;
     flex-direction: row;
     margin: 0;
     flex: 1;
+    background-color: black;
 } 
 
 .logo {
-    width: 270px;
+    width: 300px;
 }
-
 
 .div-logo {
     width: 4000px;
+    height: 40px;
     background-color: rgb(0, 0, 0);
-    
-
-
 }
 
+.dropdown{
+    padding-top: 10px;
+}
 
-.meniu {
-    width: 600px;
-    display: inline-block;
-    background-color: rgb(0, 0, 0);
-
+#dropdownMenuLink {
+    background-color: #47b11d;
+    color: black;
 }
 
 .LogIn{
@@ -39,7 +37,6 @@
     border-color: #47b11d;
     border-style: solid;
     transition: 0.25s;
-
 }
 
 .SignIn {
@@ -53,22 +50,11 @@
     border-color: #47b11d;
     border-style: solid;
     transition: 0.25s;
-    display:inline;
-
 }
 
 #SignIn {
-    width: 120px;
-    height: 30px;
-    border-radius: 20px;
-    border-width: 2.5px;
-    cursor: pointer;
-    background-color: black;
-    color: #47b11d;
-    border-color: #47b11d;
-    border-style: solid;
-    transition: 0.25s;
-    display:inline;
+    display: inline-block;
+    align-items: end;
 }
 
 .LogIn:hover {
@@ -90,11 +76,11 @@ p {
 
 }
 
-
-body {
-    margin: 0;
+html, body {
+    width:100%;
+    height:100%;
+    margin:0;
 }
-
 
 
 #kw-250,
@@ -138,6 +124,19 @@ body {
     width: 140px;
 }
 
+#more-photos {
+    color: #47b11d;
+    background-color: black;
+    border-radius: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: inline-block;
+    cursor: pointer;
+    transition: 0.25s;
+}
+
 
 .div-official {
     display: flex;
@@ -174,8 +173,8 @@ body {
 
 .second {
     text-align: center;
-    padding-left: 26px;
-    padding-right: 26px;
+    padding-left: 50px;
+    padding-right: 50px;
     padding-top: 20px;
     padding-bottom: 20px;
     cursor: pointer;
@@ -223,8 +222,36 @@ body {
     width: 250px;
 }
 
+/* .meniu {
+    display: flex;
+    justify-content: flex-end;
+    align-items: end; 
+    width: 1000px;
+    background-color: black;
+    padding-bottom: 5px;
+} */
 
-.grid {
+
+@media (min-width: 767px) {
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+        text-align: center;
+        margin-top: 10px;
+        align-items: center;
+    }
+    .meniu {
+        display: flex;
+        justify-content: flex-end;
+        align-items: end; 
+        width: 1000px;
+        background-color: black;
+        padding-bottom: 5px;
+        height: 40px;
+    }
+}
+
+/* .grid {
     display: grid;
     grid-template-columns: 500px 500px 500px;
     text-align: center;
@@ -234,4 +261,79 @@ body {
     column-gap: 200px;
     align-items:first baseline;
 
+} */
+
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    padding-top: 10px;
+  }
+  
+  .pagination {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .page-item {
+    display: inline;
+    margin-right: 5px;
+  }
+  
+.page-link {
+    padding: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #47b11d !important;
+    border-radius: 3px;
+    color: #333 !important;
+    background-color: #fff;
+}
+
+.page-item.active .page-link {
+    background-color: #47b11d;
+    color: #fff;
+}
+
+.page-link:focus {
+    box-shadow: none !important;
+    outline: none !important; 
+    border: 2px solid #47b11d !important;
+}
+
+.cookie-consent{
+    position: fixed;
+    bottom: 8px;
+    left: 20px;
+    width: 260px;
+    padding-top: 7px;
+    height: 83px;
+    color: #fff;
+  
+    line-height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    background: #292929;
+    z-index: 120;
+    cursor: pointer;
+    border-radius: 3px;
+}
+  
+.allow-button{
+    height: 20px;
+    width: 104px;
+    color: black;
+    font-size: 12px;
+    line-height: 10px;
+    border-radius: 3px;
+    border: 1px solid #47b11d;
+    background-color: #47b11d;
+    margin-right: 5px;
+}
+
+.div-kw-zx6r {
+    padding-top: 44px;
+}
+
+.LogInSignIn {
+    display: flex;
 }

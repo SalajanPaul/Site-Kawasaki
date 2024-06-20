@@ -1,0 +1,17 @@
+html, body{
+    padding:0px;
+    margin:0px;
+    background-image: url(photos/LogIn-image.jpg);
+ }
+
+p {
+    text-decoration: solid;
+}
+
+.custom-login-btn {
+    background-color:#47b11d !important;
+}
+
+.custom-SignIn-btn {
+    background-color: black !important;
+}

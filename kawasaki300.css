@@ -1,0 +1,17 @@
+body {
+    overflow: hidden;
+    background-color: black;
+  }
+
+  .carousel > .carousel-inner > .carousel-item > img{
+    width:auto;
+    height:1000px;
+}
+
+.carousel-control-prev {
+    padding-right: 100px;
+}
+
+.carousel-control-next {
+    padding-left: 100px;
+}
