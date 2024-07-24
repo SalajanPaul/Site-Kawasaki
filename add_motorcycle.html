@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="site.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <title>Adaugă Motocicletă</title>
+</head>
+<body>
+
+    <div class="header">
+        <div class="div-logo">
+            <a href="site.php">
+                <img class="logo" src="photos/logo.png">
+            </a>
+            
+            <div class="LogInSignIn">
+                <form id="Login" action ="LogIn-page.html">
+                    <button class="LogIn">Login</button>
+                </form>
+                <form id="SignIn" action ="SignIn-page.html">
+                    <button class="SignIn">SignIn</button>
+                </form>
+            </div>
+              </div>
+    
+    </div>
+
+
+  <div class="container mt-5">
+    <h2>Add motorcycle</h2>
+    <form action="add_motorcycle.php" method="post">
+      <div class="form-group">
+        <label for="model">Model</label>
+        <input type="text" class="form-control" id="model" name="model" required>
+      </div>
+      <div class="form-group">
+        <label for="engine">Engine</label>
+        <input type="text" class="form-control" id="engine" name="engine" required>
+      </div>
+      <div class="form-group">
+        <label for="year">Year</label>
+        <input type="number" class="form-control" id="year" name="year" required>
+      </div>
+      <div class="form-group">
+        <label for="capacity">Capacity</label>
+        <input type="text" class="form-control" id="capacity" name="capacity" required>
+      </div>
+      <div class="form-group">
+        <label for="horse_power">Horse Power</label>
+        <input type="text" class="form-control" id="horse_power" name="horse_power" required>
+      </div>
+      <div class="form-group">
+        <label for="cooling_system">Cooling System</label>
+        <input type="text" class="form-control" id="cooling_system" name="cooling_system" required>
+      </div>
+      <div class="form-group">
+        <label for="front_tyre">Front Tyre</label>
+        <input type="text" class="form-control" id="front_tyre" name="front_tyre" required>
+      </div>
+      <div class="form-group">
+        <label for="rear_tyre">Rear Tyre</label>
+        <input type="text" class="form-control" id="rear_tyre" name="rear_tyre" required>
+      </div>
+      <div class="form-group">
+        <label for="fuel_capacity">Fuel Capacity</label>
+        <input type="text" class="form-control" id="fuel_capacity" name="fuel_capacity" required>
+      </div>
+      <div class="form-group">
+        <label for="more_specs_link">More Specs Link</label>
+        <input type="text" class="form-control" id="more_specs_link" name="more_specs_link" required>
+      </div>
+      <div class="form-group">
+        <label for="image_url">Image URL (300x300)</label>
+        <input type="text" class="form-control" id="image_url" name="image_url" required>
+      </div>
+      <div class="form-group">
+        <label for="category">Category</label>
+        <input type="text" class="form-control" id="category" name="category" required>
+      </div>
+      <button type="submit" class="btn btn-primary">Adaugă</button>
+    </form>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
